@@ -15,7 +15,10 @@ let books = [
 
 app.get('/api/books', (req, res) => {
   const searchTerm = req.query.q;
-  const result = searchTerm ? books.filter(book => book.title.toLowerCase().includes(searchTerm.toLowerCase())) : books;
+  const result = searchTerm ? books.filter(book => \
+    book.title.toLowerCase().includes(searchTerm.toLowerCase()) || \
+    book.author.toLowerCase().includes(searchTerm.toLowerCase())
+  ) : books;
   res.send(result);
 });
 
