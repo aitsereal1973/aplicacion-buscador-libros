@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/api/libros', (req, res) => {
-  // Handle book search here
+  // TODO: Implement book search logic here
   res.send([]);
 });
 
