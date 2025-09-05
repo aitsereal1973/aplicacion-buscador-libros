@@ -13,7 +13,7 @@ let books = [
   { id: 3, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' }
 ];
 
-app.get('/api/libros', (req, res) => {
+app.get('/api/books', (req, res) => {
   const searchTerm = req.query.q;
   const result = searchTerm ? books.filter(book => book.title.toLowerCase().includes(searchTerm.toLowerCase())) : books;
   res.send(result);
