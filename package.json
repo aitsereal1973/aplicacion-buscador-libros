@@ -8,7 +8,7 @@
     "test": "echo 'Error: no test specified' && exit 1"
   },
   "keywords": ["libros", "buscador", "react", "node"],
-  "author": "Tu Nombre",
+  "author": "Nuevo Nombre",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
